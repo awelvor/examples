@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: sass
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
@@ -11,3 +11,5 @@ jobs:
           node-version: '20'
       - run: npm install -g bats
       - run: bats -v
+      - run: install sass
+      - run: sass -v
