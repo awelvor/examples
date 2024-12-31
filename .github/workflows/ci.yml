@@ -45,6 +45,9 @@ jobs:
           cache: npm
           cache-dependency-path: "**/package-lock.json"
 
+      - name: sass
+        run sass scss/styles.scss
+
       - name: Install npm dependencies
         run: npm ci
 
