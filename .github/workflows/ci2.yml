@@ -15,5 +15,6 @@ jobs:
       - run: sass --version
       - run: pwd
       - run: cd sass-js
+      - run: ls scss
       - run: sass scss/styles.scss css/styles.css
       
